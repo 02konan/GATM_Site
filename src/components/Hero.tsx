@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div 
         className="absolute inset-0 bg-gradient-to-r from-navy via-navy-light to-navy transform"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(11, 31, 59, 0.95) 0%, rgba(26, 54, 96, 0.90) 50%, rgba(11, 31, 59, 0.95) 100%), url('https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+          backgroundImage: `linear-gradient(135deg, rgba(11, 31, 59, 0.95) 0%, rgba(26, 54, 96, 0.90) 50%, rgba(11, 31, 59, 0.95) 100%), url('/GATM_Site/src/img/IMG-20250815-WA0004.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

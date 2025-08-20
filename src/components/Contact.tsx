@@ -29,14 +29,14 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@gatm.ci',
-      link: 'mailto:contact@gatm.fr',
+      value: 'alternancetalentset.metiers@gmail.com',
+      link: 'alternancetalentset.metiers@gmail.com',
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      value: '(+225)0172049993',
-      link: 'tel:0172049993',
+      value: '+225 05 07 87 5139',
+      link: 'tel:+225 05 07 87 5139',
     },
     {
       icon: MapPin,

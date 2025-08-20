@@ -1,28 +1,29 @@
 import React from 'react';
-import { Star, Clock, Users, Award } from 'lucide-react';
+import { Award,Clock,Star } from "lucide-react";
+
 
 const Programs: React.FC = () => {
   const testimonials = [
     {
-      name: 'Marie Dupont',
-      role: 'Alternante Commerce',
-      company: 'LVMH',
+      name: 'Kouassi Konan Samuel',
+      role: 'Developpeur Web',
+      company: 'VisionX',
       image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      quote: 'GATM m\'a permis de découvrir ma passion pour le luxe et de décrocher un CDI chez LVMH. L\'accompagnement est exceptionnel.',
-      rating: 5,
+      quote: 'GATM m\'a permis de développer mes compétences techniques et de me préparer au monde professionnel. Une expérience inoubliable.',
+      rating: 4,
     },
     {
-      name: 'Thomas Martin',
-      role: 'Alternant Finance',
-      company: 'BNP Paribas',
+      name: 'Roger Abotchi',
+      role: 'Alternant Communication',
+      company: 'IFSM',
       image: 'https://images.pexels.com/photos/3184348/pexels-photo-3184348.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      quote: 'Grâce au programme GATM, j\'ai pu allier théorie et pratique dans le secteur bancaire. Une expérience transformatrice.',
+      quote: 'Grâce à GATM, j\'ai pu allier théorie et pratique. Aujourd\'hui, je gère des projets de communication pour des marques prestigieuses.',
       rating: 5,
     },
     {
-      name: 'Sarah Leroy',
-      role: 'Alternante Industrie',
-      company: 'Airbus',
+      name: 'Dydy Fabfrice',
+      role: 'Alternante Call Center',
+      company: 'Orange Côte d\'Ivoire',
       image: 'https://images.pexels.com/photos/3184355/pexels-photo-3184355.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
       quote: 'Le programme m\'a ouvert les portes de l\'aéronautique. Aujourd\'hui, je travaille sur des projets d\'avenir chez Airbus.',
       rating: 5,
@@ -33,25 +34,44 @@ const Programs: React.FC = () => {
     {
       title: 'Bachelor Alternance',
       duration: '2 mois',
-      level: 'Bac+3',
+      certificate: 'Certification',
       description: 'Formation complète avec immersion professionnelle dès la première année.',
       features: ['Stage international', 'Projet de fin d\'études', 'Mentoring personnalisé'],
     },
     {
       title: 'Master Alternance',
       duration: '6 mois',
-      level: 'Bac+5',
+      certificate: 'Certification',
       description: 'Spécialisation expert avec responsabilités managériales en entreprise.',
       features: ['Leadership training', 'Thèse professionnelle', 'Réseau alumni'],
     },
     {
       title: 'Programme Intensif',
       duration: '1 an',
-      level: 'Perfectionnement',
+      certificate: 'Certification',
       description: 'Formation accélérée pour professionnels en reconversion.',
       features: ['Cours du soir', 'Week-ends intensifs', 'Certification rapide'],
     },
-  ];
+    { title: 'Finance & Comptabilité', 
+      duration: '4 mois', 
+      certificate: 'Certification', 
+      description: 'Maîtrisez les fondamentaux de la finance, de la comptabilité et de l\'analyse financière.', 
+      features: [ 'Cours interactifs', 'Cas pratiques', 'Accès à des outils professionnels', ], 
+    },
+    { title: 'Informatique & Développement', 
+      duration: '5 mois', 
+      certificate: 'Certification', 
+      description: 'Devenez expert en développement web, mobile et en gestion de bases de données.', 
+      features: [ 'Projets réels', 'Mentorat personnalisé', 'Accès à des ressources exclusives', ], 
+    },
+    { 
+      title: 'Conseil aux entreprises', 
+      duration: '6 mois', 
+      certificate: 'Certification', 
+      description: 'Formez-vous aux bases de la santé, du soin et de l’assistance paramédicale avec une approche pratique.', 
+      features: [ 'Ateliers pratiques et stages', 'Encadrement par des professionnels de santé', 'Certification reconnue dans le secteur médical', ],
+    },
+  ]
 
   return (
     <section id="programs" className="py-20 bg-gray-50">
@@ -61,8 +81,8 @@ const Programs: React.FC = () => {
             Formations & <span className="text-gold">Opportunités</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Des programmes d'excellence conçus pour révéler votre potentiel 
-            et vous propulser vers les plus grandes entreprises.
+            Des formations certifiantes taillées pour révéler votre potentiel 
+            et accélérer votre accès aux meilleures opportunités professionnelles
           </p>
         </div>
 
@@ -79,7 +99,7 @@ const Programs: React.FC = () => {
                   <span className="text-navy font-semibold">{program.duration}</span>
                 </div>
                 <span className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-medium">
-                  {program.level}
+                  {program.certificate}
                 </span>
               </div>
               

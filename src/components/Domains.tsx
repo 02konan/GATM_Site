@@ -1,41 +1,73 @@
 import React from 'react';
-import { ShoppingBag, TrendingUp, Factory, Home } from 'lucide-react';
+import { ShoppingBag, TrendingUp, Factory, Home, Search, Compass, Briefcase, Users } from 'lucide-react';
 
 const Domains: React.FC = () => {
   const domains = [
-    {
-      icon: ShoppingBag,
-      title: 'Commerce',
-      description: 'Marketing digital, retail, e-commerce et relation client',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '200+ postes',
-      color: 'from-blue-500 to-blue-600',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Finance',
-      description: 'Banque, assurance, gestion de patrimoine et fintech',
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '150+ postes',
-      color: 'from-green-500 to-green-600',
-    },
-    {
-      icon: Factory,
-      title: 'Industrie',
-      description: 'Manufacturing, logistique, supply chain et innovation',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '120+ postes',
-      color: 'from-orange-500 to-orange-600',
-    },
-    {
-      icon: Home,
-      title: 'Immobilier',
-      description: 'Transaction, gestion locative, promotion immobilière',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '80+ postes',
-      color: 'from-purple-500 to-purple-600',
-    },
-  ];
+  {
+    icon: ShoppingBag,
+    title: 'Commerce',
+    description: 'Marketing digital, retail, e-commerce et relation client',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    stats: '200+ postes',
+    color: 'from-yellow-500 to-yellow-600',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Finance',
+    description: 'Banque, assurance, gestion de patrimoine et fintech',
+    image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    stats: '150+ postes',
+    color: 'from-green-500 to-green-600',
+  },
+  {
+    icon: Factory,
+    title: 'Industrie',
+    description: 'Manufacturing, logistique, supply chain et innovation',
+    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    stats: '120+ postes',
+    color: 'from-orange-500 to-orange-600', 
+  },
+  {
+    icon: Home,
+    title: 'Immobilier',
+    description: 'Transaction, gestion locative, promotion immobilière',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    stats: '80+ postes',
+    color: 'from-purple-500 to-purple-600', 
+  },
+  {
+    icon: Search,
+    title: 'Détection et accompagnement',
+    description: 'Un processus rigoureux pour identifier et former les futurs leaders',
+    image: '/GATM_Site/img/IMG-20250815-WA0008.jpg',
+    stats: '200+ postes',
+    color: 'from-blue-500 to-blue-600', 
+  },
+  {
+    icon: Compass,
+    title: 'Coaching et orientation professionnelle',
+    description: 'Des experts dédiés pour guider chaque talent vers sa voie',
+    image: '/GATM_Site/img/IMG-20250815-WA0001.jpg',
+    stats: '150+ postes',
+    color: 'from-pink-500 to-pink-600', // rose = humain / accompagnement
+  },
+  {
+    icon: Briefcase,
+    title: 'Accompagnement à l’insertion professionnelle',
+    description: 'Mise en relation avec des entreprises partenaires et opportunités d’alternance pour une meilleure employabilité.',
+    image: '/GATM_Site/img/IMG-20250815-WA0005.jpg',
+    stats: '120+ postes',
+    color: 'from-indigo-500 to-indigo-600', // indigo = sérieux / emploi
+  },
+  {
+    icon: Users,
+    title: 'Conseil aux entreprises',
+    description: 'Appui dans le recrutement, la formation interne et le développement des compétences de leurs équipes.',
+    image: '/GATM_Site/img/IMG-20250815-WA0003.jpg',
+    stats: '80+ postes',
+    color: 'from-red-500 to-red-600',
+  },
+];
 
   return (
     <section id="domains" className="py-20 bg-white">

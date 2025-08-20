@@ -1,6 +1,7 @@
 import React from 'react';
 import { Target, Eye, Heart, Users } from 'lucide-react';
 
+
 const About: React.FC = () => {
 
   const values = [
@@ -94,6 +95,10 @@ const About: React.FC = () => {
                 personnalisé et immersion professionnelle au sein d'entreprises partenaires
                 rigoureusement sélectionnées.
               </p>
+              <p className="text-gray-600 leading-relaxed">Au-delà de la formation, le Groupe d’Alternance Talents et Métiers (GATM) propose une 
+                gamme de services visant à accompagner les talents et les 
+                entreprises dans leur développement.
+              </p>
               <div className="flex items-center space-x-4 pt-4">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-gold rounded-full"></div>
@@ -102,6 +107,10 @@ const About: React.FC = () => {
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-gold rounded-full"></div>
                   <span className="text-navy font-medium">Partenariats Premium</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-gold rounded-full"></div>
+                  <span className="text-navy font-medium">Perfectionnement professionnel</span>
                 </div>
               </div>
             </div>

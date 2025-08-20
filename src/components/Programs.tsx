@@ -32,14 +32,14 @@ const Programs: React.FC = () => {
   const programs = [
     {
       title: 'Bachelor Alternance',
-      duration: '3 ans',
+      duration: '2 mois',
       level: 'Bac+3',
       description: 'Formation complète avec immersion professionnelle dès la première année.',
       features: ['Stage international', 'Projet de fin d\'études', 'Mentoring personnalisé'],
     },
     {
       title: 'Master Alternance',
-      duration: '2 ans',
+      duration: '6 mois',
       level: 'Bac+5',
       description: 'Spécialisation expert avec responsabilités managériales en entreprise.',
       features: ['Leadership training', 'Thèse professionnelle', 'Réseau alumni'],

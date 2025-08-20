@@ -35,38 +35,6 @@ const Domains: React.FC = () => {
       stats: '80+ postes',
       color: 'from-purple-500 to-purple-600',
     },
-    {
-      icon: ShoppingBag,
-      title: 'Commerce',
-      description: 'Marketing digital, retail, e-commerce et relation client',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '200+ postes',
-      color: 'from-blue-500 to-blue-600',
-    },
-    {
-      icon: TrendingUp,
-      title: 'Finance',
-      description: 'Banque, assurance, gestion de patrimoine et fintech',
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '150+ postes',
-      color: 'from-green-500 to-green-600',
-    },
-    {
-      icon: Factory,
-      title: 'Industrie',
-      description: 'Manufacturing, logistique, supply chain et innovation',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '120+ postes',
-      color: 'from-orange-500 to-orange-600',
-    },
-    {
-      icon: Home,
-      title: 'Immobilier',
-      description: 'Transaction, gestion locative, promotion immobilière',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-      stats: '80+ postes',
-      color: 'from-purple-500 to-purple-600',
-    },
   ];
 
   return (

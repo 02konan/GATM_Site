@@ -32,7 +32,6 @@ const About: React.FC = () => {
       <div className="absolute inset-0 opacity-30">
         <div
           className="absolute top-20 right-10 w-64 h-64 bg-gold/5 rounded-full"
-
         />
         <div
           className="absolute bottom-20 left-10 w-96 h-96 bg-navy/5 rounded-full"
@@ -50,7 +49,6 @@ const About: React.FC = () => {
             et le développement des talents au cœur de sa mission.
           </p>
         </div>
-
         <div
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
         >

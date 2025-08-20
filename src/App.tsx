@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import Fondateur from './components/Fondateur';
 import Domains from './components/Domains';
 import Programs from './components/Programs';
-import Actualité from './components/actualité';
+import Actualité from './components/Actualité';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -26,6 +27,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Fondateur />
         <Domains />
         <Programs />
         <Actualité />

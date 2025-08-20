@@ -111,7 +111,7 @@ const About: React.FC = () => {
 
           <div className="relative">
             <img
-              src="src\public\img\IMG-20250815-WA0004.jpg"
+              src="\img\IMG-20250815-WA0004.jpg"
               alt="Équipe GATM"
               className="rounded-2xl shadow-2xl"
             />

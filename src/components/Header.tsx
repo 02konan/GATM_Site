@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled }) => {
           <div className="flex items-center space-x-3">
             <div className={`w-12 h-12 rounded-lg flex items-center justify-center 
             `}>
-              <img src="\img\WhatsApp Image 2025-08-15 à 05.24.23_64901d1a.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
+              <img src="src\public\img\logo.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
 
               <Building2 className={`${isScrolled ? 'text-gold' : 'text-white'}`} size={24} />
             </div>

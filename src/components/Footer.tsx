@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 flex items-center justify-center">
-                <img src="/GATM_Site/src/img/WhatsApp Image 2025-08-15 à 05.24.23_64901d1a.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
+                <img src="src\public\img\logo.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
               </div>
               <div className="text-3xl font-bold font-lora">
                 <span className="text-gold">GATM</span>

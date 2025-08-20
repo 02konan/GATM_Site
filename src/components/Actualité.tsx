@@ -5,8 +5,8 @@ const Actualité: React.FC = () => {
   const news = [
     {
       id: 1,
-      title: 'GATM signe un partenariat stratégique avec LVMH',
-      excerpt: 'Un nouveau partenariat d\'excellence pour former les futurs talents du luxe français avec des opportunités uniques d\'alternance.',
+      title: 'GATM signe un partenariat stratégique',
+      excerpt: 'Un nouveau partenariat d\'excellence pour former les futurs talents du luxe avec des opportunités uniques d\'alternance.',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
       date: '15 Janvier 2025',
       author: 'Direction GATM',
@@ -16,8 +16,8 @@ const Actualité: React.FC = () => {
     },
     {
       id: 2,
-      title: 'Ouverture de notre nouveau campus à Lyon',
-      excerpt: 'GATM étend son réseau avec l\'inauguration d\'un campus ultramoderne de 2000m² au cœur de Lyon.',
+      title: 'Ouverture de notre nouveau campus',
+      excerpt: 'GATM étend son réseau avec l\'inauguration d\'un campus ultramoderne de 2000m²',
       image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
       date: '10 Janvier 2025',
       author: 'Équipe Communication',
@@ -37,28 +37,6 @@ const Actualité: React.FC = () => {
       featured: false,
     },
     {
-      id: 4,
-      title: 'Innovation pédagogique : lancement de la réalité virtuelle',
-      excerpt: 'GATM investit dans les technologies immersives pour révolutionner l\'apprentissage en alternance.',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
-      date: '5 Janvier 2025',
-      author: 'Innovation Lab',
-      category: 'Innovation',
-      readTime: '5 min',
-      featured: false,
-    },
-    {
-      id: 5,
-      title: 'Forum Entreprises 2025 : 200 recruteurs présents',
-      excerpt: 'Le plus grand événement de recrutement en alternance de France se déroulera le 15 mars prochain.',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop',
-      date: '3 Janvier 2025',
-      author: 'Relations Entreprises',
-      category: 'Événements',
-      readTime: '3 min',
-      featured: false,
-    },
-    {
       id: 6,
       title: 'Prix de l\'Excellence Pédagogique 2024',
       excerpt: 'GATM reçoit le prestigieux prix national pour l\'innovation dans l\'enseignement supérieur.',
@@ -67,11 +45,12 @@ const Actualité: React.FC = () => {
       author: 'Direction Académique',
       category: 'Récompenses',
       readTime: '2 min',
-      featured: false,
+      aftered: true,
     },
   ];
 
   const featuredNews = news.find(item => item.featured);
+  const featuredNews_1 = news.find(item => item.aftered);
   const regularNews = news.filter(item => !item.featured);
 
   const getCategoryColor = (category: string) => {
@@ -221,6 +200,60 @@ const Actualité: React.FC = () => {
             </article>
           ))}
         </div>
+
+        {featuredNews_1 && (
+          <div className="mb-16" >
+            <div className="bg-gold-dark from-navy to-navy-light rounded-2xl overflow-hidden shadow-2xl">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div className="p-8 lg:p-12 text-white flex flex-col justify-center">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(featuredNews_1.category)} bg-white/20 text-white`}>
+                      {featuredNews_1.category}
+                    </span>
+                    <div className="flex items-center space-x-2 text-white/80 text-sm">
+                      <Calendar size={14} />
+                      <span>{featuredNews_1.date}</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold mb-4 font-lora">
+                    {featuredNews_1.title}
+                  </h3>
+                  <p className="text-white/90 mb-6 leading-relaxed">
+                    {featuredNews_1.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-4 text-sm text-white/80">
+                      <div className="flex items-center space-x-1">
+                        <User size={14} />
+                        <span>{featuredNews_1.author}</span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Clock size={14} />
+                        <span>{featuredNews_1.readTime}</span>
+                      </div>
+                    </div>
+                    <button className="bg-gradient-to-r text-white px-6 py-3 rounded-lg font-semibold hover:bg-gold-light transition-colors duration-300 flex items-center group">
+                      Lire la suite
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
+                    </button>
+                  </div>
+                </div>
+                <div className="relative h-64 lg:h-auto">
+                  <img 
+                    src={featuredNews_1.image}
+                    alt={featuredNews_1.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-gold text-navy px-3 py-1 rounded-full text-sm font-semibold">
+                      À la Une
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Newsletter Subscription */}
         <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 text-center">

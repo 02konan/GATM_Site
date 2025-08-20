@@ -46,7 +46,7 @@ const About: React.FC = () => {
             À Propos de <span className="text-gold">GATM</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Depuis plus de 10 ans, GATM révolutionne l'alternance en plaçant l'excellence
+            Depuis des années, GATM révolutionne l'alternance en plaçant l'excellence
             et le développement des talents au cœur de sa mission.
           </p>
         </div>
@@ -74,7 +74,7 @@ const About: React.FC = () => {
             {/* Logo avec texte */}
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-20 h-20 rounded-xl flex items-center justify-center">
-                <img src="/img/WhatsApp Image 2025-08-15 à 05.24.23_64901d1a.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
+                <img src="src\public\img\logo.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
               </div>
               <div className="text-navy font-semibold">
                 <div className="text-sm">Groupe d'Alternance</div>
@@ -87,7 +87,7 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4">
               <p className="text-gray-600 leading-relaxed">
-                GATM s'impose comme le leader de l'alternance premium en France,
+                GATM s'impose comme le leader de l'alternance premium dans la sous regions,
                 spécialisé dans la détection précoce des talents et leur développement
                 dans les secteurs d'avenir : commerce, finance, industrie et immobilier.
               </p>
@@ -111,7 +111,7 @@ const About: React.FC = () => {
 
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+              src="src\public\img\IMG-20250815-WA0004.jpg"
               alt="Équipe GATM"
               className="rounded-2xl shadow-2xl"
             />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Clock, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send,CheckCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -29,27 +29,22 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'contact@gatm.fr',
+      value: 'contact@gatm.ci',
       link: 'mailto:contact@gatm.fr',
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      value: '+33 1 23 45 67 89',
-      link: 'tel:+33123456789',
+      value: '(+225)0172049993',
+      link: 'tel:0172049993',
     },
     {
       icon: MapPin,
       title: 'Adresse',
-      value: '123 Avenue des Champs-Élysées, 75008 Paris',
+      value: 'Abidjan, Koumassi Mosquée, Non loin de la pharmacie Climbié',
       link: 'https://maps.google.com',
     },
-    {
-      icon: Clock,
-      title: 'Horaires',
-      value: 'Lun-Ven: 9h-18h, Sam: 9h-12h',
-      link: null,
-    },
+    
   ];
 
   return (
@@ -207,9 +202,9 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Map */}
-            <div className="bg-gray-200 h-64 rounded-2xl overflow-hidden">
+            {/* <div className="bg-gray-200 h-64 rounded-2xl overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2482749920623!2d2.2945006156744304!3d48.87373367928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8d%3A0x40b82c3688c9460!2sChamps-%C3%89lys%C3%A9es%2C%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1629814400000!5m2!1sen!2sus"
+                src="https://maps.app.goo.gl/YdvipUPxoV5ZQfNU8?g_st=ipc"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -218,7 +213,7 @@ const Contact: React.FC = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="grayscale hover:grayscale-0 transition-all duration-300"
               />
-            </div>
+            </div> */}
 
             {/* CTA Box */}
             <div className="mt-8 bg-gradient-to-r from-navy to-navy-light p-8 rounded-2xl text-white">

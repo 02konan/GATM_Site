@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-white/80 leading-relaxed mb-6 max-w-md">
-              Leader de l'alternance premium en France, GATM révèle les talents
+              Leader de l'alternance premium dans la sous regions, GATM révèle les talents
               et forme les professionnels d'excellence dans les secteurs d'avenir.
             </p>
           </div>
@@ -122,13 +122,11 @@ const Footer: React.FC = () => {
                 ))}
               </div>
               <div className="text-center md:text-right">
-                © {currentYear} GATM. Tous droits réservés.
+                © {currentYear} Kouassi Konan Samuel 01-72-04-99-93. Tous droits réservés.
               </div>
             </div>
           </div>
         </div>
-
-       
       </div>
     </footer>
   );

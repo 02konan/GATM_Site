@@ -4,19 +4,22 @@ import {Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-
+const TikTokIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M12.5 2c1 .8 2 1.4 3.1 1.7v3.1c-.7-.1-1.5-.4-2.2-.8v7.4c0 3-2.4 5.4-5.4 5.4S2.6 16.4 2.6 13.4c0-2.9 2.4-5.4 5.4-5.4.5 0 .9.1 1.4.2v3c-.4-.2-.9-.2-1.4-.2-1.3 0-2.4 1-2.4 2.4s1 2.4 2.4 2.4c1.3 0 2.4-1 2.4-2.4V2h2.1Z" />
+  </svg>
+);
   const footerLinks = {
     company: [
       { name: 'À propos', href: '#about' },
       { name: 'Nos domaines', href: '#domains' },
       { name: 'Équipe', href: '#team' },
       { name: 'Carrières', href: '#careers' },
-    ],
-    programs: [
-      { name: 'Bachelor Alternance', href: '#bachelor' },
-      { name: 'Master Alternance', href: '#master' },
-      { name: 'Programme Intensif', href: '#intensif' },
-      { name: 'Formation Continue', href: '#continue' },
     ],
     support: [
       { name: 'Contact', href: '#contact' },
@@ -34,9 +37,9 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: TikTokIcon, href: '#', label: 'TikTok' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61579652781012&sk=about_details', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/talents_et_metiers?igsh=MTl1a282NXFtNXZubA==', label: 'Instagram' },
   ];
 
   return (
@@ -101,6 +104,8 @@ const Footer: React.FC = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target='_blank'
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-navy transition-colors duration-300"
                   aria-label={social.label}
                 >

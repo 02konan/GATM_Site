@@ -122,12 +122,12 @@ const About: React.FC = () => {
               alt="Équipe GATM"
               className="rounded-2xl shadow-2xl"
             />
-            <div className="absolute -bottom-6 -left-6 bg-gold p-6 rounded-xl shadow-lg">
+            {/* <div className="absolute -bottom-6 -left-6 bg-gold p-6 rounded-xl shadow-lg">
               <div className="text-navy text-center">
                 <div className="text-2xl font-bold">10+</div>
                 <div className="text-sm font-medium">Années d'Excellence</div>
               </div>
-            </div>
+            </div> */}
             <div className="absolute -top-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
               <div className="text-navy text-center">
                 <div className="text-2xl font-bold text-gold">95%</div>

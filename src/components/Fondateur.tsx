@@ -3,17 +3,17 @@ import { Quote, Award, Users, Target } from 'lucide-react';
 
 const Fondateur: React.FC = () => {
   const founder = {
-    name: 'Jean-Pierre Dubois',
-    title: 'Fondateur & Directeur Général',
+    name: 'Nathalie Gnakpa',
+    title: 'Fondateur & Directrice Général',
     image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop',
-    quote: 'Ma vision était simple : créer un pont entre l\'excellence académique et la réussite professionnelle. Aujourd\'hui, GATM forme les leaders de demain.',
-    experience: '25+ ans d\'expérience',
-    background: 'Diplômé HEC Paris, ancien directeur chez LVMH',
+    quote: 'En 2025, forte de cette expérience et animée par une vision claire, elle fonde le Groupe d’alternance talents et métiers. Son objectif : créer un pont entre les jeunes et le monde de l’entreprise, en mettant en avant la formation, l’alternance et le développement des métiers d’avenir.',
+
+    experience: '« Investir dans les talents, c’est investir dans l’avenir »',
+    background: 'Licence professionnelle en gestion commerciale',
     achievements: [
-      'Création de GATM en 2013',
-      '500+ talents formés',
-      'Partenariats avec 150+ entreprises',
-      'Prix de l\'Innovation Pédagogique 2023'
+      'Création de GATM en 2025',
+      '150+ talents formés',
+      'Partenariats avec 50+ entreprises',
     ]
   };
 
@@ -21,12 +21,12 @@ const Fondateur: React.FC = () => {
     {
       icon: Target,
       title: 'Vision',
-      description: 'Révolutionner l\'alternance en plaçant l\'excellence au cœur de chaque parcours.'
+      description: 'Donner aux jeunes les compétences, la confiance et les opportunités nécessaires pour s’insérer durablement dans le monde du travail.'
     },
     {
       icon: Users,
       title: 'Mission',
-      description: 'Détecter et développer les talents pour créer les leaders de demain.'
+      description: 'Être un acteur de référence en Côte d’Ivoire dans le domaine de la formation, de l’alternance et de l’accompagnement des talents vers les métiers d’avenir.'
     },
     {
       icon: Award,
@@ -46,10 +46,10 @@ const Fondateur: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6 font-lora">
-            Notre <span className="text-gold">Fondateur</span>
+            Notre <span className="text-gold">Fondatrice</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez l'homme visionnaire derrière GATM et sa passion pour 
+            Découvrez la Femme visionnaire derrière GATM et sa passion pour 
             l'excellence dans la formation des talents.
           </p>
         </div>
@@ -66,7 +66,7 @@ const Fondateur: React.FC = () => {
               <div className="absolute -bottom-6 -right-6 bg-gold p-6 rounded-xl shadow-lg">
                 <div className="text-navy text-center">
                   <div className="text-lg font-bold">{founder.experience}</div>
-                  <div className="text-sm font-medium">d'Excellence</div>
+                  <div className="text-sm font-medium"> – Nathalie Gnakpa</div>
                 </div>
               </div>
             </div>
@@ -123,9 +123,9 @@ const Fondateur: React.FC = () => {
         {/* Call to Action */}
         <div className="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-12 text-white text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center">
               {/* Logo placeholder */}
-              <div className="text-gold text-xl font-bold">G</div>
+              <div className="text-gold text-xl "><img src="/GATM_Site/img/logo.jpg" alt="" /></div>
             </div>
             <div className="text-gold font-semibold text-lg">GATM</div>
           </div>

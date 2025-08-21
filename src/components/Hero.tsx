@@ -37,7 +37,8 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-lora leading-tight">
               Révélez vos 
               <span className="text-gold block">Talents</span>
-              <span className="text-white">d'Exception</span>
+              <span className="text-white">d'Exception Avec</span>
+              <span className='text-gold block'>GATM</span>
             </h1>
           </div>
           
@@ -60,27 +61,27 @@ const Hero: React.FC = () => {
             
             <button className="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-navy transition-all duration-300 flex items-center justify-center">
               <Play className="mr-2 group-hover:scale-110 transition-transform duration-300" size={20} />
-              Voir notre présentation
+              <a href="https://www.youtube.com/@AlternanceTalentsEtM%C3%A9tiers">Voir notre présentation</a>
             </button>
           </div>
 
           <div className="animate-slide-up mt-16 grid grid-cols-2 md:grid-cols-4 gap-8" style={{ animationDelay: '0.9s', opacity: 0 }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gold">500+</div>
+              <div className="text-3xl font-bold text-gold">200+</div>
               <div className="text-white/80 text-sm">Étudiants accompagnés</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-gold">150+</div>
+              <div className="text-3xl font-bold text-gold">50+</div>
               <div className="text-white/80 text-sm">Entreprises partenaires</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-gold">85%</div>
               <div className="text-white/80 text-sm">Taux d'insertion</div>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="text-3xl font-bold text-gold">10+</div>
               <div className="text-white/80 text-sm">Années d'expérience</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

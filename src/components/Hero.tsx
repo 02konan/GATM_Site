@@ -1,11 +1,10 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
-
 const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background */}
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-to-r from-navy via-navy-light to-navy transform"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(11, 31, 59, 0.95) 0%, rgba(26, 54, 96, 0.90) 50%, rgba(11, 31, 59, 0.95) 100%), url('/GATM_Site/img/IMG-20250815-WA0004.jpg')`,
@@ -13,12 +12,12 @@ const Hero: React.FC = () => {
           backgroundPosition: 'center',
         }}
       />
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden" >
-        <div className="absolute -top-4 -right-4 w-96 h-96 bg-gold/10 rounded-full animate-float"/>
-        <div className="absolute top-1/2 -left-8 w-64 h-64 bg-gold/5 rounded-full animate-float"/>
-        <div className="absolute bottom-20 right-1/4 w-32 h-32 bg-gold/15 rounded-full animate-float"/>
+        <div className="absolute -top-4 -right-4 w-96 h-96 bg-gold/10 rounded-full animate-float" />
+        <div className="absolute top-1/2 -left-8 w-64 h-64 bg-gold/5 rounded-full animate-float" />
+        <div className="absolute bottom-20 right-1/4 w-32 h-32 bg-gold/15 rounded-full animate-float" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -32,33 +31,32 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div> */}
-          
+
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-lora leading-tight">
-              Révélez vos 
+              Révélez vos
               <span className="text-gold block">Talents</span>
               <span className="text-white">d'Exception Avec</span>
               <span className='text-gold block'>GATM</span>
             </h1>
           </div>
-          
+
           <div className="animate-slide-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
             <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed font-light">
               Le Groupe d’Alternance Talents et Métiers (GATM) détecte et façonne les talents dès le plus jeune âge pour en faire des acteurs compétents et performants.
-               Présent dans les secteurs clés que sont le commerce, 
-               la finance, l’industrie et l’immobilier, 
-               GATM offre des programmes concrets alliant théorie et pratique, 
-               pour une insertion professionnelle réussie.
+              Présent dans les secteurs clés que sont le commerce,
+              la finance, l’industrie et l’immobilier,
+              GATM offre des programmes concrets alliant théorie et pratique,
+              pour une insertion professionnelle réussie.
 
             </p>
           </div>
 
           <div className="animate-slide-up flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.6s', opacity: 0 }}>
-            <button className="group bg-gold text-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gold-light transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+            <button className="bg-gold text-navy px-8 py-4 rounded-lg font-semibold hover:bg-gold-light transition-colors duration-300">
               Découvrir nos opportunités
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={20} />
             </button>
-            
             <button className="group border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-navy transition-all duration-300 flex items-center justify-center">
               <Play className="mr-2 group-hover:scale-110 transition-transform duration-300" size={20} />
               <a href="https://www.youtube.com/@AlternanceTalentsEtM%C3%A9tiers">Voir notre présentation</a>

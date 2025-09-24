@@ -73,7 +73,7 @@ const About: React.FC = () => {
             {/* Logo avec texte */}
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-20 h-20 rounded-xl flex items-center justify-center">
-                <img src="\GATM_Site\img\logo.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
+                <img src="/logo.jpg" alt="GATM Logo" className="w-full h-full object-contain" />
               </div>
               <div className="text-navy font-semibold">
                 <div className="text-sm">Groupe d'Alternance</div>
